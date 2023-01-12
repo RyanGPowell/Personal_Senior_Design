@@ -14,10 +14,7 @@
 
   <ItemGroup>
     <Reference Include="ABB.Robotics.Controllers.PC">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\ABB\SDK\PCSDK 2022\ABB.Robotics.Controllers.PC.dll</HintPath>
-    </Reference>
-    <Reference Include="RobotStudio.Services.RobApi.Desktop">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\ABB\SDK\PCSDK 2022\RobotStudio.Services.RobApi.Desktop.dll</HintPath>
+      <HintPath>..\PCSDK 2022\ABB.Robotics.Controllers.PC.dll</HintPath>
     </Reference>
   </ItemGroup>
 

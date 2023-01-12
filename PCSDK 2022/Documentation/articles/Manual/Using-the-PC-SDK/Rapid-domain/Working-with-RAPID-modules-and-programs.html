@@ -1,0 +1,394 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Working with RAPID modules and programs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Working with RAPID modules and programs ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc">
+    <meta property="docfx:tocrel" content="../../toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../images/ABBLogo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../../../articles/Introduction/GettingStarted.html" title="Introduction">Introduction</a>
+                      </li>
+                      <li>
+                          <a href="../../../../articles/Manual/Manual-Topic.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../../../../articles/Samples/Samples-Topic.html" title="Samples">Samples</a>
+                      </li>
+                      <li>
+                          <a href="../../../../api/index.html" title="API Reference">API Reference</a>
+                      </li>
+                      <li>
+                          <a href="../../../../articles/releases/pc-sdk-2022-3.html" title="Releases">Releases</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../Introduction/Introduction-Topic.html" title="Introduction" class="">Introduction</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../Introduction/About-creating-controller-applications.html" title="About creating controller applications" class="">About creating controller applications</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Introduction/Documentation-and-help.html" title="Documentation and help" class="">Documentation and help</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Introduction/Terminology.html" title="Terminology" class="">Terminology</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../Installation-and-development-environment/Installation-and-development-environment-Topic.html" title="Installation and development environment" class="">Installation and development environment</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../Installation-and-development-environment/Installation-overview.html" title="Installation overview" class="">Installation overview</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Installation-and-development-environment/How-to-obtain-and-install-a-license-key-for-RAB-5.09-or-earlier.html" title="How to obtain and install a license key for RAB 5.09 or earlier" class="">How to obtain and install a license key for RAB 5.09 or earlier</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Installation-and-development-environment/How-to-set-up-your-PC-to-communicate-with-robot.html" title="How to set up your PC to communicate with robot" class="">How to set up your PC to communicate with robot</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Installation-and-development-environment/Development-overview.html" title="Development environment" class="">Development environment</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Installation-and-development-environment/Two-development-models---virtual-and-real.html" title="Two development models - virtual and real" class="">Two development models - virtual and real</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Installation-and-development-environment/Installation-Directory.html" title="Installation Directory" class="">Installation Directory</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../Run-time-environment/Run-time-environment-Topic.html" title="Run-time environment" class="">Run-time environment</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../Run-time-environment/Overview.html" title="Overview" class="">Overview</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../Run-time-environment/Running-PC-SDK-Applications/Running-PC-SDK-Applications-Topic.html" title="Running PC SDK Applications" class="">Running PC SDK Applications</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../Run-time-environment/Running-PC-SDK-Applications/Running-PC-SDK-Applications-Overview.html" title="Overview" class="">Overview</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Run-time-environment/Running-PC-SDK-Applications/Mastership.html" title="Mastership" class="">Mastership</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Run-time-environment/Running-PC-SDK-Applications/PC-application-configuration.html" title="PC application configuration" class="">PC application configuration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Run-time-environment/Running-PC-SDK-Applications/Communication-between-PC-and-Controller.html" title="Communication between PC and Controller" class="">Communication between PC and Controller</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Run-time-environment/Running-PC-SDK-Applications/Licence-verification---applies-only-to-versions-earlier-than-PC-SDK-5.10.html" title="Licence verification" class="">Licence verification</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <a href="../../Run-time-environment/Release-upgrades-and-compatibility.html" title="Release upgrades and compatibility" class="">Release upgrades and compatibility</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../Developing-Controller-applications/Developing-Controller-applications-Topic.html" title="Developing Controller applications" class="">Developing Controller applications</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../Developing-Controller-applications/Developing-Controller-applications-introduction.html" title="Introduction" class="">Introduction</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Developing-Controller-applications/Analysis-and-design.html" title="Analysis and design" class="">Analysis and design</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Developing-Controller-applications/Controller-events-and-threads.html" title="Controller events and threads" class="">Controller events and threads</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Developing-Controller-applications/User-Authorization-system.html" title="User Authorization system" class="">User Authorization system</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Developing-Controller-applications/Exception-handling.html" title="Exception handling" class="">Exception handling</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Developing-Controller-applications/How-to-use-the-online-help.html" title="How to use the online help" class="">How to use the online help</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../Using-the-PC-SDK/Using-the-PC-SDK-Topic.html" title="Using the PC SDK" class="">Using the PC SDK</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Controller-API.html" title="Controller API" class="">Controller API</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Create-a-simple-PC-SDK-application.html" title="Create a simple PC SDK application" class="">Create a simple PC SDK application</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Discovery-domain.html" title="Discovery domain" class="">Discovery domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Accessing-the-controller.html" title="Accessing the controller" class="">Accessing the controller</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../Using-the-PC-SDK/Using-the-PC-SDK-Topic.html" title="Rapid domain" class="">Rapid domain</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../Using-the-PC-SDK/Rapid-domain/Working-with-RAPID-data.html" title="Working with RAPID data" class="">Working with RAPID data</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Using-the-PC-SDK/Rapid-domain/Handling-arrays.html" title="Handling arrays" class="">Handling arrays</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Using-the-PC-SDK/Rapid-domain/ReadItem-and-WriteItem-methods.html" title="ReadItem and WriteItem methods" class="">ReadItem and WriteItem methods</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Using-the-PC-SDK/Rapid-domain/UserDefined-data.html" title="UserDefined data" class="">UserDefined data</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Using-the-PC-SDK/Rapid-domain/RAPID-symbol-search.html" title="RAPID symbol search" class="">RAPID symbol search</a>
+                                </li>
+                                <li class="active">
+                                  <a href="../../Using-the-PC-SDK/Rapid-domain/Working-with-RAPID-modules-and-programs.html" title="Working with RAPID modules and programs" class="active">Working with RAPID modules and programs</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Using-the-PC-SDK/Rapid-domain/Enable-operator-response-to-RAPID-UI-instructions-from-a-PC.html" title="Enable operator response to RAPID UI-instructions from a PC" class="">Enable operator response to RAPID UI-instructions from a PC</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/IO-system-domain.html" title="I/O system domain" class="">I/O system domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Configuration-domain.html" title="Configuration domain" class="">Configuration domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Event-log-domain.html" title="Event log domain" class="">Event log domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Motion-domain.html" title="Motion domain" class="">Motion domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/File-system-domain.html" title="File system domain" class="">File system domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Messaging-domain.html" title="Messaging domain" class="">Messaging domain</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../Debugging-and-troubleshooting/Debugging-and-troubleshooting-Topic.html" title="Debugging and troubleshooting" class="">Debugging and troubleshooting</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../Debugging-and-troubleshooting/Debugging.html" title="Debugging" class="">Debugging</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Debugging-and-troubleshooting/Troubleshooting.html" title="Troubleshooting" class="">Troubleshooting</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../Deployment-of-a-PC-SDK-application/Deployment-of-a-PC-SDK-application-Topic.html" title="Deployment of a PC SDK application" class="">Deployment of a PC SDK application</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../Deployment-of-a-PC-SDK-application/Deployment-of-a-PC-SDK-application-overview.html" title="Deployment" class="">Deployment</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Working-with-RAPID-modules-and-programs">
+<h1 id="working-with-rapid-modules-and-programs">Working with RAPID modules and programs</h1>
+
+<h2 id="overview">Overview</h2>
+<p>Using the <code>Task</code> object it is possible to load and save individual modules and programs. You can also unload programs, as well as
+reset the program pointer and start program execution.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All these operations require mastership of the RAPID domain. For more information,
+see <a class="xref" href="../Accessing-the-controller.html">Accessing the controller</a>.</p>
+</div>
+<h2 id="load-modules-and-programs">Load modules and programs</h2>
+<p>To load a module or program file, you need the path to the file on the controller. While the file is loaded into memory the
+<code>RapidLoadMode</code> enumeration argument, <code>add</code> or <code>Replace</code>, specifies whether or not it should replace old modules or programs.</p>
+<p>If the file extension is not a valid module (mod or sys) or program (pgf) extension an <code>ArgumentException</code> is thrown.</p>
+<pre><code class="lang-csharp">try
+{
+    aTask.LoadProgramFromFile(aPrgFileName, RapidLoadMode.Replace);
+    aTask.LoadModuleFromFile(aModFileName, RapidLoadMode.Add);
+}
+catch (ArgumentException ex)
+{
+    return;
+}
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All program files must reside in the file system of the controller and not locally on the PC.
+In order to load a program from the PC, you must first download it to the controller by using the <code>FileSystem.PutFile</code> method.
+For more information, see <a class="xref" href="../File-system-domain.html">File System domain</a>.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the User Authorization System of the controller is used by the PC SDK application, it is required that the logged on user has
+the UAS grant UAS_RAPID_LOADPROGRAM to load and unload RAPID programs. For more information about which grants are necessary for a
+specific PC SDK method, see the <a class="xref" href="../../../../api/index.html">PC SDK Reference</a>.</p>
+</div>
+<h2 id="save-programs-and-modules">Save programs and modules</h2>
+<p>You can save programs using the <code>Task.SaveProgramToFile</code> method and a single module by using the <code>Module.SaveToFile</code> method.</p>
+<p>To unload a program after it has been saved to file you can call <code>DeleteProgram()</code>.</p>
+<pre><code class="lang-csharp">Task[] taskCol = aController.Rapid.GetTasks();
+foreach (Task atask in taskCol)
+{
+    atask.SaveProgramToFile(saveDir);
+    atask.DeleteProgram();
+}
+</code></pre>
+<p>In this example a module is saved to a file:</p>
+<pre><code class="lang-csharp">Module aModule = aTask.GetModule(&quot;user&quot;);
+aModule.SaveToFile(aFilePathOnTheController);
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Please note that SaveToFile() is only intended for saving modules to the controller directory.
+If you intend to save it to a local disk on your PC, you need to use file transfer.</p>
+</div>
+<h2 id="resetprogrampointer-method">ResetProgramPointer method</h2>
+<p>Using <code>ResetProgramPointer</code> you can set the program pointer to the main entry point of the task.</p>
+<pre><code class="lang-csharp">aTask.ResetProgramPointer();
+</code></pre>
+<h2 id="start-program">Start program</h2>
+<p>Starting program execution in the robot controller can only be done in
+automatic operating mode. There are several overloaded <code>Start</code> methods to use, the simplest way to start RAPID execution of
+a controller task is:</p>
+<pre><code class="lang-csharp">aTask.Start();
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If your application uses the User Authorization System of the controller
+(see <a class="xref" href="../../Developing-Controller-applications/User-Authorization-system.html">User Authorization System</a>), you should also check whether the current user has the grant
+UAS_RAPID_EXECUTE before calling the <code>Start</code> method.</p>
+</div>
+<h2 id="execution-change-event">Execution change event</h2>
+<p>It is possible to subscribe to events that occur when a RAPID program starts and stops. It is done like this:</p>
+<pre><code class="lang-csharp">aController.Rapid.ExecutionStatusChanged +=
+    new EventHandler&lt;ExecutionStatusChangedEventArgs&gt;(Rapid_ExecutionStatusChanged);
+</code></pre>
+<p>For more information on how to write the event handler that is needed to update the GUI due to a controller event, see
+<a class="xref" href="../IO-system-domain.html#avoiding-threading-conflicts">Avoiding threading conflicts</a> and
+<a class="xref" href="Working-with-RAPID-data.html#letting-the-user-know-that-rapid-data-has-changed">Letting the user know that RAPID data has changed</a>.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2021 ABB</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

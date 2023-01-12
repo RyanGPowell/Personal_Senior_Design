@@ -1,0 +1,536 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Working with RAPID data </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Working with RAPID data ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc">
+    <meta property="docfx:tocrel" content="../../toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../images/ABBLogo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../../../articles/Introduction/GettingStarted.html" title="Introduction">Introduction</a>
+                      </li>
+                      <li>
+                          <a href="../../../../articles/Manual/Manual-Topic.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../../../../articles/Samples/Samples-Topic.html" title="Samples">Samples</a>
+                      </li>
+                      <li>
+                          <a href="../../../../api/index.html" title="API Reference">API Reference</a>
+                      </li>
+                      <li>
+                          <a href="../../../../articles/releases/pc-sdk-2022-3.html" title="Releases">Releases</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../Introduction/Introduction-Topic.html" title="Introduction" class="">Introduction</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../Introduction/About-creating-controller-applications.html" title="About creating controller applications" class="">About creating controller applications</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Introduction/Documentation-and-help.html" title="Documentation and help" class="">Documentation and help</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Introduction/Terminology.html" title="Terminology" class="">Terminology</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../Installation-and-development-environment/Installation-and-development-environment-Topic.html" title="Installation and development environment" class="">Installation and development environment</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../Installation-and-development-environment/Installation-overview.html" title="Installation overview" class="">Installation overview</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Installation-and-development-environment/How-to-obtain-and-install-a-license-key-for-RAB-5.09-or-earlier.html" title="How to obtain and install a license key for RAB 5.09 or earlier" class="">How to obtain and install a license key for RAB 5.09 or earlier</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Installation-and-development-environment/How-to-set-up-your-PC-to-communicate-with-robot.html" title="How to set up your PC to communicate with robot" class="">How to set up your PC to communicate with robot</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Installation-and-development-environment/Development-overview.html" title="Development environment" class="">Development environment</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Installation-and-development-environment/Two-development-models---virtual-and-real.html" title="Two development models - virtual and real" class="">Two development models - virtual and real</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Installation-and-development-environment/Installation-Directory.html" title="Installation Directory" class="">Installation Directory</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../Run-time-environment/Run-time-environment-Topic.html" title="Run-time environment" class="">Run-time environment</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../Run-time-environment/Overview.html" title="Overview" class="">Overview</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../Run-time-environment/Running-PC-SDK-Applications/Running-PC-SDK-Applications-Topic.html" title="Running PC SDK Applications" class="">Running PC SDK Applications</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../Run-time-environment/Running-PC-SDK-Applications/Running-PC-SDK-Applications-Overview.html" title="Overview" class="">Overview</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Run-time-environment/Running-PC-SDK-Applications/Mastership.html" title="Mastership" class="">Mastership</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Run-time-environment/Running-PC-SDK-Applications/PC-application-configuration.html" title="PC application configuration" class="">PC application configuration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Run-time-environment/Running-PC-SDK-Applications/Communication-between-PC-and-Controller.html" title="Communication between PC and Controller" class="">Communication between PC and Controller</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Run-time-environment/Running-PC-SDK-Applications/Licence-verification---applies-only-to-versions-earlier-than-PC-SDK-5.10.html" title="Licence verification" class="">Licence verification</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <a href="../../Run-time-environment/Release-upgrades-and-compatibility.html" title="Release upgrades and compatibility" class="">Release upgrades and compatibility</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../Developing-Controller-applications/Developing-Controller-applications-Topic.html" title="Developing Controller applications" class="">Developing Controller applications</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../Developing-Controller-applications/Developing-Controller-applications-introduction.html" title="Introduction" class="">Introduction</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Developing-Controller-applications/Analysis-and-design.html" title="Analysis and design" class="">Analysis and design</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Developing-Controller-applications/Controller-events-and-threads.html" title="Controller events and threads" class="">Controller events and threads</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Developing-Controller-applications/User-Authorization-system.html" title="User Authorization system" class="">User Authorization system</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Developing-Controller-applications/Exception-handling.html" title="Exception handling" class="">Exception handling</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Developing-Controller-applications/How-to-use-the-online-help.html" title="How to use the online help" class="">How to use the online help</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../Using-the-PC-SDK/Using-the-PC-SDK-Topic.html" title="Using the PC SDK" class="">Using the PC SDK</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Controller-API.html" title="Controller API" class="">Controller API</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Create-a-simple-PC-SDK-application.html" title="Create a simple PC SDK application" class="">Create a simple PC SDK application</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Discovery-domain.html" title="Discovery domain" class="">Discovery domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Accessing-the-controller.html" title="Accessing the controller" class="">Accessing the controller</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../Using-the-PC-SDK/Using-the-PC-SDK-Topic.html" title="Rapid domain" class="">Rapid domain</a>
+                              
+                              <ul class="nav level3">
+                                <li class="active">
+                                  <a href="../../Using-the-PC-SDK/Rapid-domain/Working-with-RAPID-data.html" title="Working with RAPID data" class="active">Working with RAPID data</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Using-the-PC-SDK/Rapid-domain/Handling-arrays.html" title="Handling arrays" class="">Handling arrays</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Using-the-PC-SDK/Rapid-domain/ReadItem-and-WriteItem-methods.html" title="ReadItem and WriteItem methods" class="">ReadItem and WriteItem methods</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Using-the-PC-SDK/Rapid-domain/UserDefined-data.html" title="UserDefined data" class="">UserDefined data</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Using-the-PC-SDK/Rapid-domain/RAPID-symbol-search.html" title="RAPID symbol search" class="">RAPID symbol search</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Using-the-PC-SDK/Rapid-domain/Working-with-RAPID-modules-and-programs.html" title="Working with RAPID modules and programs" class="">Working with RAPID modules and programs</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../Using-the-PC-SDK/Rapid-domain/Enable-operator-response-to-RAPID-UI-instructions-from-a-PC.html" title="Enable operator response to RAPID UI-instructions from a PC" class="">Enable operator response to RAPID UI-instructions from a PC</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/IO-system-domain.html" title="I/O system domain" class="">I/O system domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Configuration-domain.html" title="Configuration domain" class="">Configuration domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Event-log-domain.html" title="Event log domain" class="">Event log domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Motion-domain.html" title="Motion domain" class="">Motion domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/File-system-domain.html" title="File system domain" class="">File system domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Using-the-PC-SDK/Messaging-domain.html" title="Messaging domain" class="">Messaging domain</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../Debugging-and-troubleshooting/Debugging-and-troubleshooting-Topic.html" title="Debugging and troubleshooting" class="">Debugging and troubleshooting</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../Debugging-and-troubleshooting/Debugging.html" title="Debugging" class="">Debugging</a>
+                          </li>
+                          <li class="">
+                            <a href="../../Debugging-and-troubleshooting/Troubleshooting.html" title="Troubleshooting" class="">Troubleshooting</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../Deployment-of-a-PC-SDK-application/Deployment-of-a-PC-SDK-application-Topic.html" title="Deployment of a PC SDK application" class="">Deployment of a PC SDK application</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../Deployment-of-a-PC-SDK-application/Deployment-of-a-PC-SDK-application-overview.html" title="Deployment" class="">Deployment</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Working-with-RAPID-data">
+<h1 id="working-with-rapid-data">Working with RAPID data</h1>
+
+<h2 id="overview">Overview</h2>
+<p>The <code>Rapid Domain</code> namespace enables access to RAPID data in the robot system. There are numerous PC SDK classes representing the
+different RAPID data types. There is also a <code>UserDefined</code> class used for referring to the RECORD structures in RAPID.</p>
+<p>The <code>ValueChanged</code> event enables notification from the controller when persistent RAPID data has changed.</p>
+<p>To speed up event notification from the controller there is a new functionality in PC SDK, which allows you to set up subscription
+priorities. This possibility applies to I/O signals and persistent RAPID data. This mechanism is further described in
+<a class="xref" href="Working-with-RAPID-data.html#implementing-high-priority-data-subscriptions">Implementing high priority data subscriptions</a>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>To read RAPID data you need to log on to the controller. To modify RAPID data you must also request mastership of the
+<code>Rapid</code> domain.</p>
+</div>
+<h2 id="providing-the-path-to-the-rapid-data">Providing the path to the RAPID data</h2>
+<p>To read or write to RAPID data you must first create a <code>RapidData</code> object. The path to the declaration of the data in the controller
+is passed as argument. If you do not know the path, you need to search for the RAPID data by using the <code>SearchRapidSymbol</code>
+functionality.</p>
+<h2 id="direct-access">Direct access</h2>
+<p>Direct access requires less memory and is faster, and is therefore recommended if you do not need to use the task and module objects
+afterwards.</p>
+<p>The following example shows how to create a <code>RapidData</code> object that refers to the instance “reg1” in the USER module.</p>
+<pre><code class="lang-csharp">RapidData rd = aController.Rapid.GetRapidData(&quot;T_ROB1&quot;, &quot;user&quot;, &quot;reg1&quot;);
+</code></pre>
+<h2 id="hierarchical-access">Hierarchical access</h2>
+<p>If you need the task and module objects hierarchical access can be more efficient. <code>GetRapidData</code> exists in the Rapid, Task and
+Module class.</p>
+<pre><code class="lang-csharp">rd = aController.Rapid.GetTask(&quot;T_ROB1&quot;).GetModule(&quot;user&quot;)
+    .GetRapidData(&quot;reg1&quot;);
+</code></pre>
+<h2 id="accessing-data-declared-in-a-shared-module">Accessing data declared in a shared module</h2>
+<p>If your application is to be used with a MultiMove system (one controller and several motion tasks/robots),
+it may happen that the RAPID instance you need to access is declared in a  RAPID module. Such a module can be used by all tasks,
+T_ROB1, T_ROB2 and so on.</p>
+<p>The following example shows how to create a <code>RapidData</code> object that refers to the instance “reg100”, which is declared in a
+shared module.</p>
+<pre><code class="lang-csharp">Task tRob1 = aController.Rapid.GetTask(&quot;T_ROB1&quot;);
+if (tRob1 != null)
+{
+    RapidData rData = tRob1.GetRapidData(&quot;user&quot;, &quot;reg1&quot;);
+}
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>From RobotWare 5.12 onwards, even if the data is declared in a Shared module it  be accessed by the PC SDK.</p>
+</div>
+<h2 id="creating-an-object-representing-the-rapid-data-value">Creating an object representing the RAPID data value</h2>
+<p>The <code>RapidData</code> object stores the path to the RAPID data. But this is not enough if you want to access its value (at least not if
+you want to it). To do that you need to create another object, which represents the of the RAPID data.</p>
+<p>In the <code>RapidDomain</code> namespace there are types representing the different RAPID data types.
+To create the object needed to represent the RAPID data value you use the <code>RapidData</code> property <code>Value</code> and cast it to the
+corresponding type, for example <code>Num, Bool</code> or <code>Tooldata</code>.</p>
+<p>To access the value of a RAPID data of the RAPID data type <code>bool</code>.</p>
+<pre><code class="lang-csharp">//declare a variable of data type RapidDomain.Bool
+ABB.Robotics.Controllers.RapidDomain.Bool rapidBool;
+ABB.Robotics.Controllers.RapidDomain.RapidData rd = aController.Rapid.GetRapidData(
+    &quot;T_ROB1&quot;, &quot;MainModule&quot;, &quot;flag&quot;);
+//test that data type is correct before cast
+if (rd.Value is ABB.Robotics.Controllers.RapidDomain.Bool)
+{
+    rapidBool = (ABB.Robotics.Controllers.RapidDomain.Bool)rd.Value;
+    //assign the value of the RAPID data to a local variable
+    bool boolValue = rapidBool.Value;
+}
+</code></pre>
+<p>If you want only to read this variable you can use the following technique instead of creating a <code>RapidDomain.Bool</code> object:</p>
+<pre><code class="lang-csharp">bool b = Convert.ToBoolean(rd.Value.ToString());
+</code></pre>
+<p>The .NET type <code>ToolData</code>(representing the RAPID data type <code>tooldata</code> can be created like this:</p>
+<pre><code class="lang-csharp">ToolData aTool;
+if (rd.Value is ToolData)
+{
+    aTool = (ToolData) rd.Value;
+}
+</code></pre>
+<h2 id="irapiddatatostring-method">IRapidData.ToString method</h2>
+<p>All RapidDomain structures representing RAPID data types implement the <code>IRapidData</code> interface.
+It has a <code>ToString</code> method, which returns the value of the RAPID data in the form of a string. This is a simple example:</p>
+<pre><code class="lang-csharp">string bValue = rapidBool.ToString();
+</code></pre>
+<p>The string is formatted according to the principle described in <code>IRapidData.FillFromString</code> method.</p>
+<p>The following is an example of a complex data type. The <code>ToolDataTframe</code> property is of type <code>Pose</code>.
+Its <code>Trans</code> value is displayed in a label in the format [x, y, z].</p>
+<pre><code class="lang-csharp">this.label1.Text = aTool.Tframe.Trans.ToString();
+</code></pre>
+<h2 id="irapiddatafillfromstring-method">IRapidData.FillFromString method</h2>
+<p>The <code>IRapidData</code> interface also has a <code>FillFromString</code> method, which fills the object with a valid RAPID string representation.
+The method can always be used when you need to modify RAPID data. Using the method with the <code>RapidDomain.Bool</code> variable used earlier
+in the chapter will look like this:</p>
+<pre><code class="lang-csharp">rapidBool.FillFromString(&quot;True&quot;)
+</code></pre>
+<p>Using it for a  variable is similar:</p>
+<pre><code class="lang-csharp">rapidNum.FillFromString(&quot;10&quot;)
+</code></pre>
+<h2 id="string-format">String format</h2>
+<p>The format is constructed recursively. The following example illustrate it.</p>
+<p>Example:</p>
+<p>The <code>RapidDomain.Pose</code> structure represents the RAPID data type <code>pose</code>, which describes how a coordinate system is displaced and
+rotated around another coordinate system.</p>
+<pre><code class="lang-csharp">public struct Pose : IRapidData
+{
+    public Pos trans;
+    public Orient rot;
+}
+</code></pre>
+<p>The following is an example in RAPID:</p>
+<pre><code class="lang-plaintext">VAR pose frame1;
+...
+frame1.trans := [50, 0, 40];
+frame1.rot := [1, 0, 0, 0];
+</code></pre>
+<p>The frame1 coordinate transformation is assigned a value that corresponds to a displacement in position
+where X=50mm, Y=0mm, and Z=40mm. There is no rotation.</p>
+<p>The <code>RapidDomain.Pose</code> structure consists of two struct variables called <em>trans</em> and <em>rot</em> of the data types <code>Pos</code> and <code>Orient</code>.
+<code>Pos</code> has three floats and <code>Orient</code> consists of four doubles.
+The <code>FillFromString</code> format for a <code>Pose</code> object is &quot;[[1.0, 0.0, 0.0, 0.0][10.0, 20.0, 30.0]]&quot;.</p>
+<p>The example shows how to write a new value to a RAPID <code>pose</code> variable:</p>
+<pre><code class="lang-csharp">if (rd.Value is Pose)
+{
+    Pose rapidPose = (Pose) rd.Value;
+    rapidPose.FillFromString(&quot;[[1.0, 0.5, 0.0, 0.0][10, 15, 10]]&quot;);
+    rd.Value = rapidPose;
+}
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The string format must be carefully observed. If the string argument has a wrong format, a <code>RapidDataFormatException</code> is thrown.</p>
+</div>
+<h2 id="writing-to-rapid-data">Writing to RAPID data</h2>
+<p>Writing to RAPID data is possible only by using the type cast <code>RapidData</code> value, to which the new value is assigned.
+To write the new value to the RAPID data in the controller, you must assign the .NET object to the <code>Value</code> property of the
+<code>RapidData</code> object.</p>
+<p>The following example uses the rapidBool object created in
+<a class="xref" href="Working-with-RAPID-data.html#creating-an-object-representing-the-rapid-data-value">Creating an object representing the RAPID data value</a>.</p>
+<pre><code class="lang-csharp">//Assign new value to .Net variable
+rapidBool.Value = false;
+
+//Request mastership of Rapid before writing to the controller
+this.master = Mastership.Request(this.aController.Rapid);
+
+//Change: controller is repaced by aController
+rd.Value = rapidBool;
+
+//Release mastership as soon as possible
+this.master.Dispose();
+</code></pre>
+<p>For more information on how the controller handles write access, see <a class="xref" href="../../Run-time-environment/Running-PC-SDK-Applications/Mastership.html">Mastership</a> and for another code example of
+implementing mastership in a PC SDK application, see <a class="xref" href="../Create-a-simple-PC-SDK-application.html#start-program-execution">Start program execution</a>.</p>
+<p>The preceding example is simple, as the value to change was a simple <code>bool</code>.
+Often, however, RAPID uses complex structures. By using the <code>FillFromString</code> method you can assign a new <code>Value</code> to any <code>RapidData</code>
+and write it to the controller.</p>
+<p>The string must be formatted according to the principle described in the <code>RapidData.FillFromString</code> section. T
+he following example shows how to write a new value to the <code>pos</code> structure (x, y, z) of a RAPID tooldata:</p>
+<pre><code class="lang-csharp">Pos aPos = new Pos();
+aPos.FillFromString(&quot;[2,3,3]&quot;);
+aTool.Tframe.Trans = aPos;
+using (Mastership.Request(aController.Rapid))
+{
+    rd.Value = aTool;
+}
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The new value is not written to the controller until the last statement is executed.</p>
+</div>
+<h2 id="letting-the-user-know-that-rapid-data-has-changed">Letting the user know that RAPID data has changed</h2>
+<p>In order to be notified that RAPID data has changed you need to add a subscription to the <code>ValueChanged</code> event of the <code>RapidData</code>
+instance. However, that this only works for <em>persistent</em> RAPID data.</p>
+<h2 id="add-subscription">Add subscription</h2>
+<p>This is how you add a subscription to the <code>ValueChanged</code> event:</p>
+<pre><code class="lang-csharp">rd.ValueChanged += new EventHandler&lt;DataValueChangedEventArgs&gt;(rd_ValueChanged);
+</code></pre>
+<h2 id="handle-event">Handle event</h2>
+<p>The following example shows the implementation of the event handler.
+Remember that controller events use their own threads, and avoid Winforms threading problems by the use of <code>Control.Invoke</code>, which
+forces the execution from the background thread to the GUI thread.</p>
+<pre><code class="lang-vbnet">Private Sub rd_ValueChanged(ByVal sender As Object, ByVal e As DataValueChangedEventArgs)
+Me.Invoke(New EventHandler(UpdateGUI), sender, e)
+End Sub
+</code></pre>
+<p>To learn more about potential threading conflicts in PC SDK applications, see
+<a class="xref" href="../../Developing-Controller-applications/Controller-events-and-threads.html">Controller events and threads</a>.</p>
+<h2 id="read-new-value-from-controlller">Read new value from controlller</h2>
+<p>Update the user interface with the new value.
+As the value is not part of the event argument, you must use the <code>RapidDataValue</code> property to retrieve the new value:</p>
+<pre><code class="lang-vbnet">Private Sub UpdateGUI(ByVal sender As Object, ByVal e As System.EventArgs)
+Dim tool1 As ToolData = DirectCast(Me.rd.Value, ToolData)
+Me.label1.Text = tool1.Tframe.Trans.ToString()
+End Sub
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Subscriptions work only for RAPID data declared as PERS.</p>
+</div>
+<h2 id="implementing-high-priority-data-subscriptions">Implementing high priority data subscriptions</h2>
+<p>To speed up event notification from the controller, it is possible to set up subscription priorities for persistent RAPID data.
+To do this, you can use the <code>Subscribe</code> method and the enumeration <code>EventPriority</code> as argument. The following example shows an
+ordinary signal subscription and a subscription with high priority:</p>
+<pre><code class="lang-csharp">rd.Subscribe(rd_ValueChanged, EventPriority.High);
+.
+.
+.
+rd.Unsubscribe(rd_ValueChanged)
+</code></pre>
+<p>To deactivate subscriptions with high priority you can call the <code>Unsubscribe</code> method as described in the following example:</p>
+<pre><code class="lang-csharp">rd.Unsubscribe(rd_ValueChanged)
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>High priority subscriptions can be used for I/O signals and RAPID data declared PERS. The controller can handle
+64 high priority subscriptions.</p>
+</div>
+<h2 id="rapiddata-disposal">RapidData disposal</h2>
+<p>You are recommended to dispose the <code>RapidData</code> objects when they are no longer needed. For more information,
+see <a class="xref" href="../Accessing-the-controller.html#memory-management-in-pc-applications">Memory management in PC applications</a>.</p>
+<pre><code class="lang-csharp">if (rd != null)
+{
+    rd.Dispose();
+    rd = null;
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2021 ABB</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

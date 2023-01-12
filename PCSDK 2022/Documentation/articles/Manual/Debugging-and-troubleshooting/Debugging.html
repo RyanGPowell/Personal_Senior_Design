@@ -1,0 +1,741 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Debugging </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Debugging ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc">
+    <meta property="docfx:tocrel" content="../toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/ABBLogo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../../articles/Introduction/GettingStarted.html" title="Introduction">Introduction</a>
+                      </li>
+                      <li>
+                          <a href="../../../articles/Manual/Manual-Topic.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../../../articles/Samples/Samples-Topic.html" title="Samples">Samples</a>
+                      </li>
+                      <li>
+                          <a href="../../../api/index.html" title="API Reference">API Reference</a>
+                      </li>
+                      <li>
+                          <a href="../../../articles/releases/pc-sdk-2022-3.html" title="Releases">Releases</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../Introduction/Introduction-Topic.html" title="Introduction" class="">Introduction</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../Introduction/About-creating-controller-applications.html" title="About creating controller applications" class="">About creating controller applications</a>
+                          </li>
+                          <li class="">
+                            <a href="../Introduction/Documentation-and-help.html" title="Documentation and help" class="">Documentation and help</a>
+                          </li>
+                          <li class="">
+                            <a href="../Introduction/Terminology.html" title="Terminology" class="">Terminology</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../Installation-and-development-environment/Installation-and-development-environment-Topic.html" title="Installation and development environment" class="">Installation and development environment</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../Installation-and-development-environment/Installation-overview.html" title="Installation overview" class="">Installation overview</a>
+                          </li>
+                          <li class="">
+                            <a href="../Installation-and-development-environment/How-to-obtain-and-install-a-license-key-for-RAB-5.09-or-earlier.html" title="How to obtain and install a license key for RAB 5.09 or earlier" class="">How to obtain and install a license key for RAB 5.09 or earlier</a>
+                          </li>
+                          <li class="">
+                            <a href="../Installation-and-development-environment/How-to-set-up-your-PC-to-communicate-with-robot.html" title="How to set up your PC to communicate with robot" class="">How to set up your PC to communicate with robot</a>
+                          </li>
+                          <li class="">
+                            <a href="../Installation-and-development-environment/Development-overview.html" title="Development environment" class="">Development environment</a>
+                          </li>
+                          <li class="">
+                            <a href="../Installation-and-development-environment/Two-development-models---virtual-and-real.html" title="Two development models - virtual and real" class="">Two development models - virtual and real</a>
+                          </li>
+                          <li class="">
+                            <a href="../Installation-and-development-environment/Installation-Directory.html" title="Installation Directory" class="">Installation Directory</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../Run-time-environment/Run-time-environment-Topic.html" title="Run-time environment" class="">Run-time environment</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../Run-time-environment/Overview.html" title="Overview" class="">Overview</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../Run-time-environment/Running-PC-SDK-Applications/Running-PC-SDK-Applications-Topic.html" title="Running PC SDK Applications" class="">Running PC SDK Applications</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../Run-time-environment/Running-PC-SDK-Applications/Running-PC-SDK-Applications-Overview.html" title="Overview" class="">Overview</a>
+                                </li>
+                                <li class="">
+                                  <a href="../Run-time-environment/Running-PC-SDK-Applications/Mastership.html" title="Mastership" class="">Mastership</a>
+                                </li>
+                                <li class="">
+                                  <a href="../Run-time-environment/Running-PC-SDK-Applications/PC-application-configuration.html" title="PC application configuration" class="">PC application configuration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../Run-time-environment/Running-PC-SDK-Applications/Communication-between-PC-and-Controller.html" title="Communication between PC and Controller" class="">Communication between PC and Controller</a>
+                                </li>
+                                <li class="">
+                                  <a href="../Run-time-environment/Running-PC-SDK-Applications/Licence-verification---applies-only-to-versions-earlier-than-PC-SDK-5.10.html" title="Licence verification" class="">Licence verification</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <a href="../Run-time-environment/Release-upgrades-and-compatibility.html" title="Release upgrades and compatibility" class="">Release upgrades and compatibility</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../Developing-Controller-applications/Developing-Controller-applications-Topic.html" title="Developing Controller applications" class="">Developing Controller applications</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../Developing-Controller-applications/Developing-Controller-applications-introduction.html" title="Introduction" class="">Introduction</a>
+                          </li>
+                          <li class="">
+                            <a href="../Developing-Controller-applications/Analysis-and-design.html" title="Analysis and design" class="">Analysis and design</a>
+                          </li>
+                          <li class="">
+                            <a href="../Developing-Controller-applications/Controller-events-and-threads.html" title="Controller events and threads" class="">Controller events and threads</a>
+                          </li>
+                          <li class="">
+                            <a href="../Developing-Controller-applications/User-Authorization-system.html" title="User Authorization system" class="">User Authorization system</a>
+                          </li>
+                          <li class="">
+                            <a href="../Developing-Controller-applications/Exception-handling.html" title="Exception handling" class="">Exception handling</a>
+                          </li>
+                          <li class="">
+                            <a href="../Developing-Controller-applications/How-to-use-the-online-help.html" title="How to use the online help" class="">How to use the online help</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../Using-the-PC-SDK/Using-the-PC-SDK-Topic.html" title="Using the PC SDK" class="">Using the PC SDK</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../Using-the-PC-SDK/Controller-API.html" title="Controller API" class="">Controller API</a>
+                          </li>
+                          <li class="">
+                            <a href="../Using-the-PC-SDK/Create-a-simple-PC-SDK-application.html" title="Create a simple PC SDK application" class="">Create a simple PC SDK application</a>
+                          </li>
+                          <li class="">
+                            <a href="../Using-the-PC-SDK/Discovery-domain.html" title="Discovery domain" class="">Discovery domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../Using-the-PC-SDK/Accessing-the-controller.html" title="Accessing the controller" class="">Accessing the controller</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../Using-the-PC-SDK/Using-the-PC-SDK-Topic.html" title="Rapid domain" class="">Rapid domain</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../Using-the-PC-SDK/Rapid-domain/Working-with-RAPID-data.html" title="Working with RAPID data" class="">Working with RAPID data</a>
+                                </li>
+                                <li class="">
+                                  <a href="../Using-the-PC-SDK/Rapid-domain/Handling-arrays.html" title="Handling arrays" class="">Handling arrays</a>
+                                </li>
+                                <li class="">
+                                  <a href="../Using-the-PC-SDK/Rapid-domain/ReadItem-and-WriteItem-methods.html" title="ReadItem and WriteItem methods" class="">ReadItem and WriteItem methods</a>
+                                </li>
+                                <li class="">
+                                  <a href="../Using-the-PC-SDK/Rapid-domain/UserDefined-data.html" title="UserDefined data" class="">UserDefined data</a>
+                                </li>
+                                <li class="">
+                                  <a href="../Using-the-PC-SDK/Rapid-domain/RAPID-symbol-search.html" title="RAPID symbol search" class="">RAPID symbol search</a>
+                                </li>
+                                <li class="">
+                                  <a href="../Using-the-PC-SDK/Rapid-domain/Working-with-RAPID-modules-and-programs.html" title="Working with RAPID modules and programs" class="">Working with RAPID modules and programs</a>
+                                </li>
+                                <li class="">
+                                  <a href="../Using-the-PC-SDK/Rapid-domain/Enable-operator-response-to-RAPID-UI-instructions-from-a-PC.html" title="Enable operator response to RAPID UI-instructions from a PC" class="">Enable operator response to RAPID UI-instructions from a PC</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <a href="../Using-the-PC-SDK/IO-system-domain.html" title="I/O system domain" class="">I/O system domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../Using-the-PC-SDK/Configuration-domain.html" title="Configuration domain" class="">Configuration domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../Using-the-PC-SDK/Event-log-domain.html" title="Event log domain" class="">Event log domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../Using-the-PC-SDK/Motion-domain.html" title="Motion domain" class="">Motion domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../Using-the-PC-SDK/File-system-domain.html" title="File system domain" class="">File system domain</a>
+                          </li>
+                          <li class="">
+                            <a href="../Using-the-PC-SDK/Messaging-domain.html" title="Messaging domain" class="">Messaging domain</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../Debugging-and-troubleshooting/Debugging-and-troubleshooting-Topic.html" title="Debugging and troubleshooting" class="">Debugging and troubleshooting</a>
+                        
+                        <ul class="nav level2">
+                          <li class="active">
+                            <a href="../Debugging-and-troubleshooting/Debugging.html" title="Debugging" class="active">Debugging</a>
+                          </li>
+                          <li class="">
+                            <a href="../Debugging-and-troubleshooting/Troubleshooting.html" title="Troubleshooting" class="">Troubleshooting</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../Deployment-of-a-PC-SDK-application/Deployment-of-a-PC-SDK-application-Topic.html" title="Deployment of a PC SDK application" class="">Deployment of a PC SDK application</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../Deployment-of-a-PC-SDK-application/Deployment-of-a-PC-SDK-application-overview.html" title="Deployment" class="">Deployment</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Debugging">
+<h1 id="debugging">Debugging</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Using the Microsoft Visual Studio debugger for a PC SDK application presents no difference compared to standard
+.NET development. Debugging can be done using the virtual IRC5 in RobotStudio or a real controller.</p>
+<h2 id="exception-error-codes">Exception error codes</h2>
+<p>Some exceptions that may appear during development have error codes associated with them. The error codes may help you
+correct the problem.</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x80040401</td>
+<td>The requested poll level could not be met, poll level low is used.</td>
+</tr>
+<tr>
+<td>0x80040402</td>
+<td>The requested poll level could not be met, poll level medium is used.</td>
+</tr>
+<tr>
+<td>0xC0040401</td>
+<td>No connection with controller.</td>
+</tr>
+<tr>
+<td>0xC0040402</td>
+<td>Error connecting to controller.</td>
+</tr>
+<tr>
+<td>0xC0040403</td>
+<td>No response from controller.</td>
+</tr>
+<tr>
+<td>0xC0040404</td>
+<td>Message queue full. (Should only happen if asynchronous calls are made.)</td>
+</tr>
+<tr>
+<td>0xC0040405</td>
+<td>Waiting for a resource.</td>
+</tr>
+<tr>
+<td>0xC0040406</td>
+<td>The message sent is too large to handle.</td>
+</tr>
+<tr>
+<td>0xC0040408</td>
+<td>A string does not contain characters exclusively from a supported encoding, for example ISO-8859-1 (ISO-Latin1).</td>
+</tr>
+<tr>
+<td>0xC0040409</td>
+<td>The resource can not be released since it is in use.</td>
+</tr>
+<tr>
+<td>0xC0040410</td>
+<td>The client is already logged on as a controller user.</td>
+</tr>
+<tr>
+<td>0xC0040411</td>
+<td>The controller was not present in NetScan.</td>
+</tr>
+<tr>
+<td>0xC0040412</td>
+<td>The NetScanID is no longer in use. Controller removed from list.</td>
+</tr>
+<tr>
+<td>0xC0040413</td>
+<td>The client id is not associated with a controller user. Returned only by methods that need to check this before sending request to controller. Otherwise, see 0xC004840F.</td>
+</tr>
+<tr>
+<td>0xC0040414</td>
+<td>The RobotWare version is later than the installed Robot Communication Runtime. A newer Robot Communication Runtime needs to be installed. Returned by RobHelperFactory.</td>
+</tr>
+<tr>
+<td>0xC0040415</td>
+<td>The major and minor part of the RobotWare version is known, but the revision is later and not fully compatible. A newer Robot Communication Runtime needs to be installed. Code returned by RobHelperFactory.</td>
+</tr>
+<tr>
+<td>0xC0040416</td>
+<td>The RobotWare version is no longer supported. Code returned by RobHelperFactory.</td>
+</tr>
+<tr>
+<td>0xC0040417</td>
+<td>The helper type is not supported by the RobotWare. Helper might be obsolete or for later RobotWare versions, or the helper may not be supported by a BootLevel controller. Code returned by RobHelperFactory.</td>
+</tr>
+<tr>
+<td>0xC0040418</td>
+<td>System id and network id mismatch, they do not identify the same controller.</td>
+</tr>
+<tr>
+<td>0xC0040601</td>
+<td>Call was made by other client than the one that made the Connect() call.</td>
+</tr>
+<tr>
+<td>0xC0040602</td>
+<td>File not found on the local file system. Can be that file, directory or device does not exist.</td>
+</tr>
+<tr>
+<td>0xC0040603</td>
+<td>File not found on the remote file system. Can be that file, directory or device does not exist.</td>
+</tr>
+<tr>
+<td>0xC0040604</td>
+<td>Error when accessing/creating file on the local file system.</td>
+</tr>
+<tr>
+<td>0xC0040605</td>
+<td>Error when accessing/creating file on the remote file system.</td>
+</tr>
+<tr>
+<td>0xC0040606</td>
+<td>The path or filename is too long or otherwise bad for the VxWorks file system.</td>
+</tr>
+<tr>
+<td>0xC0040607</td>
+<td>The file transfer was interrupted. When transferring to remote system, the cause may be that the remote device is full.</td>
+</tr>
+<tr>
+<td>0xC0040608</td>
+<td>The local device is full.</td>
+</tr>
+<tr>
+<td>0xC0040609</td>
+<td>Client already has a connection and can not make a new connection until the present one is disconnected.</td>
+</tr>
+<tr>
+<td>0xC0040701</td>
+<td>One or more files in the release directory is corrupt and cannot be used when launching a VC.</td>
+</tr>
+<tr>
+<td>0xC0040702</td>
+<td>One or more files in the system directory is corrupt and cannot be used when launching a VC.</td>
+</tr>
+<tr>
+<td>0xC0040703</td>
+<td>A VC for this system has already been started; only one VC per system is allowed.</td>
+</tr>
+<tr>
+<td>0xC0040704</td>
+<td>Could not warm start VC since it must be cold started first.</td>
+</tr>
+<tr>
+<td>0xC0040705</td>
+<td>The requested operation failed since VC ownership is not held or could not be obtained.</td>
+</tr>
+<tr>
+<td>0xC0048401</td>
+<td>Out of memory.</td>
+</tr>
+<tr>
+<td>0xC0048402</td>
+<td>Not yet implemented.</td>
+</tr>
+<tr>
+<td>0xC0048403</td>
+<td>The service is not supported in this version of the controller.</td>
+</tr>
+<tr>
+<td>0xC0048404</td>
+<td>Operation not allowed on active system.</td>
+</tr>
+<tr>
+<td>0xC0048405</td>
+<td>The data requested does not exist.</td>
+</tr>
+<tr>
+<td>0xC0048406</td>
+<td>The directory does not contain all required data to complete the operation.</td>
+</tr>
+<tr>
+<td>0xC0048407</td>
+<td>Operation rejected by the controller safety access restriction mechanism.</td>
+</tr>
+<tr>
+<td>0xC0048408</td>
+<td>The resource is not held by caller.</td>
+</tr>
+<tr>
+<td>0xC0048409</td>
+<td>An argument specified by the client is not valid for this type of operation.</td>
+</tr>
+<tr>
+<td>0xC004840A</td>
+<td>Mismatch in controller id between backup and current system.</td>
+</tr>
+<tr>
+<td>0xC004840B</td>
+<td>Mismatch in key id, that is, options, languages and so on. between backup and current system.</td>
+</tr>
+<tr>
+<td>0xC004840C</td>
+<td>Mismatch in robot type between backup and current system.</td>
+</tr>
+<tr>
+<td>0xC004840D</td>
+<td>Client not allowed to log on as local user.</td>
+</tr>
+<tr>
+<td>0xC004840F</td>
+<td>The client is not logged on as a controller user.</td>
+</tr>
+<tr>
+<td>0xC0048410</td>
+<td>The requested resource is already held by caller</td>
+</tr>
+<tr>
+<td>0xC0048411</td>
+<td>The max number of the requested resources has been reached.</td>
+</tr>
+<tr>
+<td>0xC0048412</td>
+<td>No request active for the given user.</td>
+</tr>
+<tr>
+<td>0xC0048413</td>
+<td>Operation/request timed out on controller.</td>
+</tr>
+<tr>
+<td>0xC0048414</td>
+<td>No local user is logged on.</td>
+</tr>
+<tr>
+<td>0xC0048415</td>
+<td>The operation was not allowed for the given user.</td>
+</tr>
+<tr>
+<td>0xC0048416</td>
+<td>The URL used to initialize the helper does not resolve to a valid object.</td>
+</tr>
+<tr>
+<td>0xC0048417</td>
+<td>The amount of data is too large to fulfill the request.</td>
+</tr>
+<tr>
+<td>0xC0048418</td>
+<td>Controller is busy. Try again later.</td>
+</tr>
+<tr>
+<td>0xC0048419</td>
+<td>The request was denied.</td>
+</tr>
+<tr>
+<td>0xC004841A</td>
+<td>Requested resource is held by someone else.</td>
+</tr>
+<tr>
+<td>0xC004841B</td>
+<td>Requested feature is disabled.</td>
+</tr>
+<tr>
+<td>0xC004841C</td>
+<td>The operation is not allowed in current operation mode. For example, a remote user may not be allowed to perform the operation in manual mode.</td>
+</tr>
+<tr>
+<td>0xC004841D</td>
+<td>The user does not have required mastership for the operation.</td>
+</tr>
+<tr>
+<td>0xC004841E</td>
+<td>Operation not allowed while backup in progress.</td>
+</tr>
+<tr>
+<td>0xC004841F</td>
+<td>Operation not allowed when tasks are in synchronized state.</td>
+</tr>
+<tr>
+<td>0xC0048420</td>
+<td>Operation not allowed when task is not active in task selection panel.</td>
+</tr>
+<tr>
+<td>0xC0048421</td>
+<td>Mismatch in controller id between backup and current system.</td>
+</tr>
+<tr>
+<td>0xC0048422</td>
+<td>Mismatch in controller id between backup and current.</td>
+</tr>
+<tr>
+<td>0xC0048423</td>
+<td>Invalid client id.</td>
+</tr>
+<tr>
+<td>0xC0049000</td>
+<td>RAPID symbol was not found.</td>
+</tr>
+<tr>
+<td>0xC0049001</td>
+<td>The given source position is illegal for the operation.</td>
+</tr>
+<tr>
+<td>0xC0049002</td>
+<td>The given file was not recognized as a program file, for example the XML semantics may be incorrect.</td>
+</tr>
+<tr>
+<td>0xC0049003</td>
+<td>Ambiguous module name.</td>
+</tr>
+<tr>
+<td>0xC0049004</td>
+<td>The RAPID program name is not set.</td>
+</tr>
+<tr>
+<td>0xC0049005</td>
+<td>Module is read protected.</td>
+</tr>
+<tr>
+<td>0xC0049006</td>
+<td>Module is write protected.</td>
+</tr>
+<tr>
+<td>0xC0049007</td>
+<td>Operation is illegal in current execution state.</td>
+</tr>
+<tr>
+<td>0xC0049008</td>
+<td>Operation is illegal in current task state.</td>
+</tr>
+<tr>
+<td>0xC0049009</td>
+<td>The robot is not on path and is unable to restart. Regain to or clear path.</td>
+</tr>
+<tr>
+<td>0xC004900A</td>
+<td>Operation is illegal at current execution level.</td>
+</tr>
+<tr>
+<td>0xC004900B</td>
+<td>Operation can not be performed without destroying the current execution context.</td>
+</tr>
+<tr>
+<td>0xC004900C</td>
+<td>The RAPID heap memory is full.</td>
+</tr>
+<tr>
+<td>0xC004900D</td>
+<td>Operation not allowed due to syntax error(s).</td>
+</tr>
+<tr>
+<td>0xC004900E</td>
+<td>Operation not allowed due to semantic error(s).</td>
+</tr>
+<tr>
+<td>0xC004900F</td>
+<td>Given routine is not a legal entry point. Possible reasons are: routine is a function, or routine has parameters.</td>
+</tr>
+<tr>
+<td>0xC0049010</td>
+<td>Illegal to move PCP to given place.</td>
+</tr>
+<tr>
+<td>0xC0049011</td>
+<td>Max number of rob targets exceeded.</td>
+</tr>
+<tr>
+<td>0xC0049012</td>
+<td>Object is not mod possible. Possible reasons are: object is a variable, object is a parameter, object is an array.</td>
+</tr>
+<tr>
+<td>0xC0049013</td>
+<td>Operation not allowed with displacement active.</td>
+</tr>
+<tr>
+<td>0xC0049014</td>
+<td>The robot is not on path and is unable to restart. Regain to path. Clear is not allowed.</td>
+</tr>
+<tr>
+<td>0xC0049015</td>
+<td>Previously planned path remains. Choose to either consume the path, which means the initial movement might be in an unexpected direction, or to clear the path and move directly to next target.</td>
+</tr>
+<tr>
+<td>0xC004A000</td>
+<td>General file handling error.</td>
+</tr>
+<tr>
+<td>0xC004A001</td>
+<td>The device is full.</td>
+</tr>
+<tr>
+<td>0xC004A002</td>
+<td>Wrong disk. Change disk and try again.</td>
+</tr>
+<tr>
+<td>0xC004A003</td>
+<td>The device is not ready.</td>
+</tr>
+<tr>
+<td>0xC004A004</td>
+<td>Invalid path.</td>
+</tr>
+<tr>
+<td>0xC004A005</td>
+<td>Not a valid device.</td>
+</tr>
+<tr>
+<td>0xC004A006</td>
+<td>Unable to create directory.</td>
+</tr>
+<tr>
+<td>0xC004A007</td>
+<td>The directory does not exist.</td>
+</tr>
+<tr>
+<td>0xC004A008</td>
+<td>The directory already exists.</td>
+</tr>
+<tr>
+<td>0xC004A009</td>
+<td>The directory contains data.</td>
+</tr>
+<tr>
+<td>0xC004A00B</td>
+<td>Unable to create file.</td>
+</tr>
+<tr>
+<td>0xC004A00C</td>
+<td>File not found or could not be opened for reading.</td>
+</tr>
+<tr>
+<td>0xC004A200</td>
+<td>Disable of unit not allowed at trustlevel 0.</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2021 ABB</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

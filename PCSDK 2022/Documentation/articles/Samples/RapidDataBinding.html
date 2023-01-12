@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Rapid Data Binding </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Rapid Data Binding ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/ABBLogo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../articles/Introduction/GettingStarted.html" title="Introduction">Introduction</a>
+                      </li>
+                      <li>
+                          <a href="../../articles/Manual/Manual-Topic.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../../articles/Samples/Samples-Topic.html" title="Samples">Samples</a>
+                      </li>
+                      <li>
+                          <a href="../../api/index.html" title="API Reference">API Reference</a>
+                      </li>
+                      <li>
+                          <a href="../../articles/releases/pc-sdk-2022-3.html" title="Releases">Releases</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="AccessingControllerData.html" title="Accessing Controller Data" class="">Accessing Controller Data</a>
+                    </li>
+                    <li class="active">
+                      <a href="RapidDataBinding.html" title="Rapid Data Binding" class="active">Rapid Data Binding</a>
+                    </li>
+                    <li class="">
+                      <a href="Loading-a-RAPID-module.html" title="Loading a RAPID module" class="">Loading a RAPID module</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RapidDataBinding">
+<h1 id="rapid-data-binding">Rapid Data Binding</h1>
+
+<p>The RAPID Data Binding application is a sample application which shows how to bind RAPID data variables with controls such as Data Grid.</p>
+<h2 id="download">Download</h2>
+<p>Click here to <a href="../../downloads/RapidDataBinding.zip">download</a></p>
+<h2 id="user-interface">User Interface</h2>
+<p><img src="../../images/RapidDataBindingUserInterface.png" alt=""></p>
+<p>This sample application uses these controls – Group Box, Data Grid, Labels and Text Boxes.</p>
+<p>As the above user interface image shows, we are binding a set of RAPID data variables to a data grid control. When a row is selected, its particulars are displayed on the right.</p>
+<p>This is a very simple application which binds a few RAPID data variables to a data grid. So if new variables are created, you can follow similar steps in the code to bind them to the data grid. Also, the modification of variables in the data grid will not affect the actual RAPID data variables.</p>
+<h2 id="how-to-create-a-rapid-module">How to create a Rapid Module</h2>
+<p>To create a RAPID module:</p>
+<ol>
+<li>Go to “Program Editor” &gt;&gt; “Modules” &gt;&gt; “File” &gt;&gt; “New Module…”</li>
+<li>Create a module “Data1”, like “Module1” in below image.</li>
+</ol>
+<p><img src="../../images/RapidDataBindingCreateRapidMod.png" alt=""></p>
+<h2 id="how-to-create-rapid-data">How to create Rapid Data</h2>
+<p>To create RAPID Data:</p>
+<ol>
+<li>Global Persistent RAPID data &quot;data&quot; of data type &quot;num&quot; in task &quot;T_ROB1&quot; of &quot;MainModule&quot; module.</li>
+<li>Global Persistent RAPID data &quot;data12&quot; of data type &quot;num&quot; in task &quot;T_ROB1&quot; of &quot;Data1&quot; module.</li>
+</ol>
+<p><img src="../../images/RapidDataBindingCreateRapidData.png" alt=""></p>
+<h2 id="how-to-run-the-program">How to run the program</h2>
+<ol>
+<li><p>Create an App.config  as shown in screen shot below.</p>
+<p><img src="../../images/RapidDataBindingHowToRun1.png" alt=""></p>
+</li>
+<li><p>Ensure that the references of ABB.Robotics and ABB.Robotics.Controllers are correct.</p>
+<p><img src="../../images/RapidDataBindingHowToRun2.png" alt=""></p>
+</li>
+</ol>
+<h2 id="required-namespaces">Required Namespaces</h2>
+<ul>
+<li><a class="xref" href="../../api/ABB.Robotics.html">ABB.Robotics</a></li>
+<li><a class="xref" href="../../api/ABB.Robotics.Controllers.html">ABB.Robotics.Controllers</a></li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a class="xref" href="AccessingControllerData.html">Accessing Controller Data</a></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2021 ABB</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
