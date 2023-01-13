@@ -24,7 +24,6 @@ namespace Connection
 
             connect.networkWatcher.Found += FoundController;
             Console.Write("Searching");
-            connect.scanner.Scan();
 
             while(connect.scanner.Controllers.Count <= 0) 
             {
