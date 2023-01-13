@@ -2,6 +2,7 @@
 using System.Runtime.CompilerServices;
 using ABB.Robotics.Controllers;
 using ABB.Robotics.Controllers.Discovery;
+using ABB.Robotics.Controllers.IOSystemDomain;
 using ABB.Robotics.Controllers.RapidDomain;
 using Task = ABB.Robotics.Controllers.RapidDomain.Task;
 
@@ -17,33 +18,40 @@ namespace Connection
         {
             Connect connect = new Connect();
             connect.scanner = new NetworkScanner();
-            connect.scanner.Scan();
 
             ControllerInfoCollection controllers = connect.scanner.Controllers;
             connect.networkWatcher = new NetworkWatcher(controllers);
-
             connect.networkWatcher.Found += FoundController;
-            Console.Write("Searching");
-
-            while(connect.scanner.Controllers.Count <= 0) 
+            connect.scanner.Scan();
+            
+            ControllerInfo controller = null;
+            if(connect.scanner.Controllers.Count > 0)
             {
-                connect.scanner.Scan();
-                Console.Write(".");
-                Thread.Sleep(1000);
+                
+              controller= connect.scanner.Controllers.Where(controllerInfo => controllerInfo.ControllerName == "Kitt").ToList()[0];
             }
+
+            //while(connect.scanner.Controllers.Count <= 0) 
+            //{
+            //    Console.Write("Searching");
+            //    connect.scanner.Scan();
+            //    Console.Write(".");
+            //    Thread.Sleep(1000);
+            //}
             //ControllerInfo controller = controllers[0];
 
 
-            //Console.WriteLine("Press any key to connect to: "+ controller.IPAddress.ToString());
+            Console.WriteLine("Press any key to connect to: "+ controller.IPAddress.ToString() + " " + controller.Name.ToString());
             Console.ReadLine();
 
 
             //Logging onto controller
             //connect.controller = ControllerFactory.CreateFrom(controller);
+            connect.controller = Controller.Connect(controller, ConnectionType.Standalone);
             connect.controller.Logon(UserInfo.DefaultUser);
             Console.WriteLine("Connected");
 
-            Start(connect);
+            //Start(connect);
 
 
         }
@@ -61,11 +69,15 @@ namespace Connection
                 if (connect.controller.OperatingMode == ControllerOperatingMode.Auto)
                 {
                     connect.tasks = connect.controller.Rapid.GetTasks();
-                    using (Mastership m = Mastership.Request(connect.controller.Rapid))
+                    double counterValue = ((Num)connect.controller.Rapid.GetTask("T_ROB1").GetModule("MainMod").GetRapidData("counter").Value).Value;
+                    using (Mastership m = Mastership.Request(connect.controller))
                     {
+                        connect.controller.Rapid.GetTask("T_ROB1").GetModule("MainMod").GetRapidData("counter").Value = new Num(5);
                         //Perform operation
                         connect.tasks[0].Start();
                     }
+                    connect.controller.MotionSystem.ActiveMechanicalUnit.GetPosition()
+                    DigitalSignal digitalSignal = ((DigitalSignal)connect.controller.IOSystem.GetSignal("DoorOpen"));
                 }
                 else
                 {
